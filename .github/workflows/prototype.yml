@@ -47,7 +47,7 @@ jobs:
 
       - name: Tag the docker image
         run: |
-          docker tag ${{ matrix.image }} ghcr.io/${{ github.repository_owner }}/${{ matrix.image }}:latest
+          docker tag ${{ matrix.image }} ghcr.io/${{ github.repository_owner }}/root:${{ matrix.image }}
         
       - name: Publish image
         env:
@@ -55,7 +55,7 @@ jobs:
         run: |
           if [ ! -z ${deploy_secret} ]; then
             echo ${{ secrets.CR_PAT }} | docker login ghcr.io --username ${{ github.actor }} --password-stdin;
-            docker push ghcr.io/${{ github.repository_owner }}/${{ matrix.image }}:latest;
+            docker push ghcr.io/${{ github.repository_owner }}/root:${{ matrix.image }};
           else
             echo "Skipping deploy no secrets present";
           fi
