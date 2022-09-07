@@ -23,8 +23,6 @@ WORKDIR /tmp
 ## Clean up (lines 41)
 # remove unneeded system files
 RUN sed -i 's/#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
- && sed -i 's/#de_DE.UTF-8 UTF-8/de_DE.UTF-8 UTF-8/' /etc/locale.gen \
- && sed -i 's/#en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen \
  && locale-gen \
  && echo 'LANG=en_US.UTF-8' > /etc/locale.conf \
  && mkdir -p /root/.gnupg \
