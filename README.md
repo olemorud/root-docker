@@ -6,15 +6,68 @@ Where to get help: [the ROOT forum](https://root-forum.cern.ch/)
 
 ## Supported tags and respective Dockerfile links
 
-* [`latest`](https://github.com/root-project/root-docker/blob/6.26.06-ubuntu22.04/ubuntu/Dockerfile) -> [`6.26.06-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.06-ubuntu22.04/ubuntu/Dockerfile), [`6.26.04-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.04-ubuntu22.04/ubuntu/Dockerfile), [`6.26.02-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.02-ubuntu22.04/ubuntu/Dockerfile)
-* [`6.26.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.26.02-ubuntu20.04/ubuntu/Dockerfile), [`6.26.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.26.00-ubuntu20.04/ubuntu/Dockerfile), [`6.24.06-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.06-ubuntu20.04/ubuntu/Dockerfile), [`6.24.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.02-ubuntu20.04/ubuntu/Dockerfile), [`6.24.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.00-ubuntu20.04/ubuntu/Dockerfile), [`6.22.08-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.08-ubuntu20.04/ubuntu/Dockerfile), [`6.22.06-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.06-ubuntu20.04/ubuntu/Dockerfile), [`6.22.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.02-ubuntu20.04/ubuntu/Dockerfile), [`6.22.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.00-ubuntu20.04/ubuntu/Dockerfile), [`6.20.08-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.20.08-ubuntu20.04/ubuntu/Dockerfile)
-* [`6.26.06-conda`](https://github.com/root-project/root-docker/blob/6.26.06-conda/conda/Dockerfile), [`6.26.04-conda`](https://github.com/root-project/root-docker/blob/6.26.04-conda/conda/Dockerfile), [`6.26.00-conda`](https://github.com/root-project/root-docker/blob/6.26.00-conda/conda/Dockerfile), [`6.24.06-conda`](https://github.com/root-project/root-docker/blob/6.24.06-conda/conda/Dockerfile), [`6.24.02-conda`](https://github.com/root-project/root-docker/blob/6.24.02-conda/conda/Dockerfile), [`6.24.00-conda`](https://github.com/root-project/root-docker/blob/6.24.00-conda-3/conda/Dockerfile), [`6.22.08-conda`](https://github.com/root-project/root-docker/blob/6.22.08-conda/conda/Dockerfile), [`6.22.06-conda`](https://github.com/root-project/root-docker/blob/6.22.06-conda/conda/Dockerfile), [`6.22.02-conda`](https://github.com/root-project/root-docker/blob/6.22.02-conda/conda/Dockerfile), [`6.22.00-conda`](https://github.com/root-project/root-docker/blob/6.22.00-conda/conda/Dockerfile)
-* [`6.26.04-arch`](https://github.com/root-project/root-docker/blob/6.26.04-arch/arch/Dockerfile), [`6.26.00-arch`](https://github.com/root-project/root-docker/blob/6.26.00-arch/arch/Dockerfile), [`6.24.06-arch`](https://github.com/root-project/root-docker/blob/6.24.06-arch/arch/Dockerfile), [`6.24.02-arch`](https://github.com/root-project/root-docker/blob/6.24.02-arch/arch/Dockerfile), [`6.24.00-arch`](https://github.com/root-project/root-docker/blob/6.24.00-arch/arch/Dockerfile), [`6.22.06-arch`](https://github.com/root-project/root-docker/blob/6.22.06-arch/arch/Dockerfile), [`6.22.02-arch`](https://github.com/root-project/root-docker/blob/6.22.02-arch/arch/Dockerfile), [`6.22.00-arch`](https://github.com/root-project/root-docker/blob/6.22.00-arch/conda/Dockerfile), [`6.20.06-arch`](https://github.com/root-project/root-docker/blob/6.20.06-arch/arch/Dockerfile)
-* [`6.26.06-fedora35`](https://github.com/root-project/root-docker/blob/6.26.06-fedora35/fedora/Dockerfile), [`6.26.02-fedora35`](https://github.com/root-project/root-docker/blob/6.26.02-fedora35/fedora/Dockerfile), [`6.24.06-fedora35`](https://github.com/root-project/root-docker/blob/6.24.06-fedora35/fedora/Dockerfile)
-* [`6.22.08-fedora34`](https://github.com/root-project/root-docker/blob/6.22.08-fedora34/fedora/Dockerfile)
+<!--BEGIN UBUNTU22-->
+* [`latest`](https://github.com/root-project/root-docker/blob/6.26.06-ubuntu22.04/ubuntu/Dockerfile) ->
+[`6.26.06-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.06-ubuntu22.04/ubuntu/Dockerfile),
+[`6.26.04-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.04-ubuntu22.04/ubuntu/Dockerfile),
+[`6.26.02-ubuntu22.04`](https://github.com/root-project/root-docker/blob/6.26.02-ubuntu22.04/ubuntu/Dockerfile)
+
+<!--BEGIN UBUNTU20-->
+* [`6.26.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.26.02-ubuntu20.04/ubuntu/Dockerfile),
+[`6.26.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.26.00-ubuntu20.04/ubuntu/Dockerfile),
+[`6.24.06-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.06-ubuntu20.04/ubuntu/Dockerfile),
+[`6.24.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.02-ubuntu20.04/ubuntu/Dockerfile),
+[`6.24.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.24.00-ubuntu20.04/ubuntu/Dockerfile),
+[`6.22.08-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.08-ubuntu20.04/ubuntu/Dockerfile),
+[`6.22.06-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.06-ubuntu20.04/ubuntu/Dockerfile),
+[`6.22.02-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.02-ubuntu20.04/ubuntu/Dockerfile),
+[`6.22.00-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.22.00-ubuntu20.04/ubuntu/Dockerfile),
+[`6.20.08-ubuntu20.04`](https://github.com/root-project/root-docker/blob/6.20.08-ubuntu20.04/ubuntu/Dockerfile)
+
+<!--BEGIN CONDA-->
+* [`6.26.06-conda`](https://github.com/root-project/root-docker/blob/6.26.06-conda/conda/Dockerfile),
+[`6.26.04-conda`](https://github.com/root-project/root-docker/blob/6.26.04-conda/conda/Dockerfile),
+[`6.26.00-conda`](https://github.com/root-project/root-docker/blob/6.26.00-conda/conda/Dockerfile),
+[`6.24.06-conda`](https://github.com/root-project/root-docker/blob/6.24.06-conda/conda/Dockerfile),
+[`6.24.02-conda`](https://github.com/root-project/root-docker/blob/6.24.02-conda/conda/Dockerfile),
+[`6.24.00-conda`](https://github.com/root-project/root-docker/blob/6.24.00-conda-3/conda/Dockerfile),
+[`6.22.08-conda`](https://github.com/root-project/root-docker/blob/6.22.08-conda/conda/Dockerfile),
+[`6.22.06-conda`](https://github.com/root-project/root-docker/blob/6.22.06-conda/conda/Dockerfile),
+[`6.22.02-conda`](https://github.com/root-project/root-docker/blob/6.22.02-conda/conda/Dockerfile),
+[`6.22.00-conda`](https://github.com/root-project/root-docker/blob/6.22.00-conda/conda/Dockerfile)
+ 
+<!--BEGIN ARCH-->
+* [`6.26.04-arch`](https://github.com/root-project/root-docker/blob/6.26.04-arch/arch/Dockerfile),
+[`6.26.00-arch`](https://github.com/root-project/root-docker/blob/6.26.00-arch/arch/Dockerfile),
+[`6.24.06-arch`](https://github.com/root-project/root-docker/blob/6.24.06-arch/arch/Dockerfile),
+[`6.24.02-arch`](https://github.com/root-project/root-docker/blob/6.24.02-arch/arch/Dockerfile),
+[`6.24.00-arch`](https://github.com/root-project/root-docker/blob/6.24.00-arch/arch/Dockerfile),
+[`6.22.06-arch`](https://github.com/root-project/root-docker/blob/6.22.06-arch/arch/Dockerfile),
+[`6.22.02-arch`](https://github.com/root-project/root-docker/blob/6.22.02-arch/arch/Dockerfile),
+[`6.22.00-arch`](https://github.com/root-project/root-docker/blob/6.22.00-arch/conda/Dockerfile),
+[`6.20.06-arch`](https://github.com/root-project/root-docker/blob/6.20.06-arch/arch/Dockerfile)
+
+<!--BEGIN FEDORA35-->
+* [`6.26.06-fedora35`](https://github.com/root-project/root-docker/blob/6.26.06-fedora35/fedora/Dockerfile), 
+[`6.26.02-fedora35`](https://github.com/root-project/root-docker/blob/6.26.02-fedora35/fedora/Dockerfile),
+[`6.24.06-fedora35`](https://github.com/root-project/root-docker/blob/6.24.06-fedora35/fedora/Dockerfile)
+
+<!--BEGIN FEDORA34-->
+* [`6.22.08-fedora34`](https://github.com/root-project/root-docker/blob/6.22.08-fedora34/fedora/Dockerfile) 
+ 
+<!--BEGIN FEDORA33-->
 * [`6.22.06-fedora33`](https://github.com/root-project/root-docker/blob/6.22.06-fedora33/fedora/Dockerfile)
-* [`6.22.02-fedora32`](https://github.com/root-project/root-docker/blob/6.22.02-fedora32/fedora/Dockerfile), [`6.22.00-fedora32`](https://github.com/root-project/root-docker/blob/6.22.00-fedora32/fedora/Dockerfile), [`6.20.06-fedora32`](https://github.com/root-project/root-docker/blob/6.20.06-fedora32/fedora/Dockerfile)
-* [`6.24.06-centos7`](https://github.com/root-project/root-docker/blob/6.24.06-centos7/centos7/Dockerfile), [`6.22.08-centos7`](https://github.com/root-project/root-docker/blob/6.22.08-centos7/centos7/Dockerfile), [`6.22.02-centos7`](https://github.com/root-project/root-docker/blob/6.22.02-centos7/cc7/Dockerfile), [`6.22.00-centos7`](https://github.com/root-project/root-docker/blob/6.22.00-centos7/cc7/Dockerfile)
+
+<!--BEGIN FEDORA32-->
+* [`6.22.02-fedora32`](https://github.com/root-project/root-docker/blob/6.22.02-fedora32/fedora/Dockerfile), 
+[`6.22.00-fedora32`](https://github.com/root-project/root-docker/blob/6.22.00-fedora32/fedora/Dockerfile),
+[`6.20.06-fedora32`](https://github.com/root-project/root-docker/blob/6.20.06-fedora32/fedora/Dockerfile)
+
+<!--BEGIN CENTOS7-->
+* [`6.24.06-centos7`](https://github.com/root-project/root-docker/blob/6.24.06-centos7/centos7/Dockerfile), 
+[`6.22.08-centos7`](https://github.com/root-project/root-docker/blob/6.22.08-centos7/centos7/Dockerfile),
+[`6.22.02-centos7`](https://github.com/root-project/root-docker/blob/6.22.02-centos7/cc7/Dockerfile),
+[`6.22.00-centos7`](https://github.com/root-project/root-docker/blob/6.22.00-centos7/cc7/Dockerfile)
 
 ### Supported C++ standards
 
