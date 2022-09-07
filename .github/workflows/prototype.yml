@@ -26,7 +26,7 @@ jobs:
   build:
     strategy:
       matrix:
-        image: ["arch", "centos7", "conda", "fedora", "ubuntu"]
+        image: ["arch", "centos7", "conda", "fedora", "ubuntu", "gentoo"]
       fail-fast: false
 
     runs-on: ubuntu-latest
