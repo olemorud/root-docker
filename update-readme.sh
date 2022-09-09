@@ -27,5 +27,4 @@ esac
 
 echo "$newversion-$name"
 
-# https://github.com/root-project/root-docker/blob/6.26.06-arch/arch/Dockerfile
 sed -i "/<!--$name-->/a * [\`$newversion-$name\`]($base_url\/blob\/$newversion-$name\/$name\/Dockerfile)" updatedREADME.md

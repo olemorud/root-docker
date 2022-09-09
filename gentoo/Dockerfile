@@ -1,11 +1,20 @@
 FROM gentoo/portage
-FROM gentoo/stage3-amd64
+FROM gentoo/stage3
 
-COPY --from=gentoo/portage /usr/portage /usr/portage
+ENV PORTAGEDIR=/var/db/repos/gentoo
 
-COPY portage /etc/portage
+COPY --from=gentoo/portage ${PORTAGEDIR} ${PORTAGEDIR}
 
-RUN emerge -NDuvt sci-physics/root \
- && rm -rf /tmp/* /usr/portage /var/tmp/portage
+COPY ./portage /etc/portage
+
+
+
+# Fix Perl conflicts ( https://wiki.gentoo.org/wiki/Perl )
+RUN emerge --tree -verbose --newuse -deep dev-lang/perl
+#RUN emerge -uDNv --backtrack=100 --autounmask-keep-masks=y @world
+
+
+RUN emerge --tree --verbose --update --newuse --deep sci-physics/root \
+ && rm -rf /tmp/* ${PORTAGEDIR} /var/tmp/portage
 
 CMD ["root", "-b"]
