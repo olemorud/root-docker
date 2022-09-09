@@ -1,0 +1,46 @@
+# This workflow creates docker images that are then used for:
+#
+# - Root-project packages CI
+# 
+# All created images are then uploaded to GitHub Container registry
+
+name: Create images
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Link image to repository by appending a label to Dockerfile
+        run: |
+          sudo chmod 777 ubuntu_from_source/Dockerfile &&
+          sed -i "/^FROM.*/a LABEL org.opencontainers.image.source https://github.com/${{ github.repository }}" ubuntu_from_source/Dockerfile &&
+          cat ubuntu_from_source/Dockerfile
+
+      - name: Build the docker image
+        run: |
+          docker build -t ubuntu_from_source ubuntu_from_source/
+
+      - name: Tag the docker image
+        run: |
+          docker tag ubuntu_from_source ghcr.io/${{ github.repository_owner }}/root:ubuntu_from_source
+        
+      - name: Publish image
+        env:
+          deploy_secret: ${{ secrets.CR_PAT }}
+        run: |
+          if [ ! -z ${deploy_secret} ]; then
+            echo ${{ secrets.CR_PAT }} | docker login ghcr.io --username ${{ github.actor }} --password-stdin;
+            docker push ghcr.io/${{ github.repository_owner }}/root:ubuntu_from_source;
+          else
+            echo "Skipping deploy no secrets present";
+          fi
+
